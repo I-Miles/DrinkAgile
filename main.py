@@ -126,6 +126,8 @@ while True:
                 pass
             else:
                 print("opção invalida digite novamente")
+        else:
+            print("Digite a senha correta")
     elif escolha == "2":
         print(25 * "-")
         print("bem vindo ao menu do cliente")
@@ -147,12 +149,8 @@ while True:
             break
         else:
             print("Digite o um numero que seja coerente com o menu.")
-
-
-
-
-
-
-
-
-
+    elif escolha == "3":
+        print("saindo......")
+        break
+    else:
+        print("Digite o um numero que seja coerente com o menu.")

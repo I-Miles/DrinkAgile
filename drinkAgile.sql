@@ -105,13 +105,6 @@ UPDATE fornecedores SET nomeforn = 'Felipe', emailforn = 'felipin@gmail.com', te
 UPDATE produtos SET nome = 'Pinga', preco = '2.00', estoque = '12' WHERE nome = 'Chopp';
 
 
-ALTER TABLE clientes
-ADD COLUMN Status VARCHAR(50);
-
-UPDATE clientes
-SET Status = "Ativo"
-WHERE idcli > 0;
-
 DELIMITER //
 CREATE PROCEDURE procinativarCliente (
     IN p_idcli INT
